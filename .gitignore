@@ -2,3 +2,5 @@
 *.bkp
 .theme/
 ShakeTune_results/
+printer-*.cfg
+helixscreen/crash_history.json
