@@ -1,7 +1,7 @@
 #!/bin/sh
 # CONFIG_PUSH [MSG="why"]: commit local edits and push to GitHub main (no pull).
 cd "$HOME/printer_data/config" || exit 1
-MSG="$1"
+MSG="$(echo "$1" | sed "s/^ *//;s/ *$//")"
 git add -A
 files=$(git diff --cached --name-only | tr '\n' ' ')
 if [ -z "$files" ]; then echo "nothing to commit"; else

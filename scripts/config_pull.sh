@@ -6,7 +6,7 @@
 #      new branch printer-edits/<timestamp>, reset the printer to origin/main,
 #      and say so in the console. Claude merges the branch later.
 cd "$HOME/printer_data/config" || exit 1
-MSG="$1"
+MSG="$(echo "$1" | sed "s/^ *//;s/ *$//")"
 git add -A
 files=$(git diff --cached --name-only | tr '\n' ' ')
 if [ -n "$files" ]; then
