@@ -147,6 +147,25 @@
       },
       {
         "phases": {
+          "7": 71
+        },
+        "temp_bucket": 2,
+        "timestamp": 1795102639,
+        "total": 852,
+        "window": 1
+      },
+      {
+        "phases": {
+          "2": 22,
+          "7": 39
+        },
+        "temp_bucket": 2,
+        "timestamp": 1795103741,
+        "total": 821,
+        "window": 1
+      },
+      {
+        "phases": {
           "7": 96
         },
         "temp_bucket": 1,
@@ -180,6 +199,25 @@
         "timestamp": 1795013576,
         "total": 960,
         "window": 1
+      },
+      {
+        "phases": {
+          "2": 70,
+          "7": 26
+        },
+        "temp_bucket": 1,
+        "timestamp": 1795111449,
+        "total": 975,
+        "window": 1
+      },
+      {
+        "phases": {
+          "7": 71
+        },
+        "temp_bucket": 1,
+        "timestamp": 1795450377,
+        "total": 943,
+        "window": 1
       }
     ]
   },
@@ -209,6 +247,9 @@
         "chamber": "controller_fan driver_fan",
         "exhaust": "",
         "hotend": "heater_fan hotend_fan",
+        "names": {
+          "controller_fan driver_fan": "Drivers Fan"
+        },
         "part": "fan"
       },
       "filament_sensors": {
@@ -253,7 +294,7 @@
             "temperature_sensor EBB36_driver",
             "temperature_sensor beacon_coil"
           ],
-          "timestamp": "2026-11-19T14:38:20Z"
+          "timestamp": "2026-11-23T16:56:57Z"
         },
         "optional": []
       },
@@ -604,10 +645,10 @@
   "thermal": {
     "rates": {
       "extruder": {
-        "heat_rate": 0.2376459687948227
+        "heat_rate": 0.24509437382221222
       },
       "heater_bed": {
-        "heat_rate": 2.048478603363037
+        "heat_rate": 2.110304594039917
       }
     }
   },
