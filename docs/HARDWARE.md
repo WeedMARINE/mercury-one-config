@@ -9,7 +9,7 @@ Tuning results, decisions and open work are in `STATUS.md`.
 |---|---|
 | Printer | ZeroG Mercury One.1 with Hydra bed, built on an Ender 5 frame (not the Plus) |
 | Kinematics | CoreXY; bed moves in Z on three independent lead screws |
-| Printable area | 260 x 250 mm (X x Y); Z 250 mm configured, real travel not measured |
+| Printable area | 260 x 250 mm (X x Y), Z 250 mm. **Provisional**: see the note under Coordinate frame |
 | Host | Raspberry Pi 5, Raspberry Pi OS Trixie, hostname `BoomMercuryOne1` |
 | Firmware | Klipper, Moonraker, Mainsail (installed with KIAUH) |
 | Screen | BTT HDMI5 touchscreen running HelixScreen |
@@ -18,7 +18,7 @@ Tuning results, decisions and open work are in `STATUS.md`.
 | Probe | Beacon RevH, its own USB cable to the Pi |
 | Toolhead | E34M1 (EVA 3 for the Mercury One.1) |
 
-Not recorded yet: frame outer dimensions, moving mass, real Z travel.
+Not recorded yet: frame outer dimensions, moving mass.
 
 ## Power
 
@@ -132,6 +132,13 @@ MOTOR3's enable pin is PA2 on board revision V1.1 (it differs on V1.0).
 The GEN2 pin map is not the same as the older EBB36 V1.2.
 
 ## Coordinate frame
+
+**Provisional (2026-11-24).** The printer runs safely on these limits, but they
+are due a re-measure: Z travel has never been measured (250 is a placeholder),
+and the X and Y limits were set while the BLTouch mount was fitted. That mount
+is what kept the toolhead off the left stop, so travel may now be larger.
+Limits, slicer bed size, mesh area and tilt probe points all follow from this
+and change together.
 
 | | |
 |---|---|
