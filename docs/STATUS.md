@@ -60,7 +60,7 @@ The machine itself is described in `HARDWARE.md`; working rules are in `../CLAUD
 
 ## TODO (updated 2026-11-24)
 **Hardware**
-4. Proper driver fan (on order; Ender 5 blower is the stopgap).
+4. Driver cooling — done 2026-11-24: second 40 mm fan on FAN3 over slots 3-4. Watch for a repeat of the Z1 stall (see HARDWARE.md, Motion).
 5. Bed thermal cutoff — KSD301 too big; axial thermal fuse (157 °C 10 A) in the live lead is the alternative. Parked; no unattended ASA until fitted.
 6. Smarter soak — closed: fixed 10 min is adequate (soak drift log).
 9. **Re-measure the build volume.** Z: real travel, then set `position_max` (250 is a placeholder). X/Y: re-check usable travel at each stop now the BLTouch mount is gone, then update the axis limits, slicer bed size, mesh area and tilt probe points together (separate config commit). Printer is operable on the current limits.

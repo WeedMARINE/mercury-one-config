@@ -50,8 +50,17 @@ Klipper cannot cut bed power if the relay fails closed.
   current dropped to 0.6 A while homing). X homes to the right stop, Y to the
   front stop.
 - Limits in Klipper: 300 mm/s, 6000 mm/s2, Z 10 mm/s.
-- Driver cooling: an Ender 5 24 V blower on Octopus FAN2, reaching slots 0-2.
-  A proper fan is on order.
+- Driver cooling: two 40 mm fans on a printed plate over the Octopus. FAN2
+  covers slots 0-2 (A/B and Z); FAN3 covers slots 3-4 (Z1 and Z2) and was
+  added 2026-11-24. Both run whenever a motor is enabled.
+- Z1 incident, 2026-11-24: the front-right Z motor stalled twice (once while
+  homing, once on the lift at a filament-tangle pause) with no console error,
+  and `STEPPER_BUZZ` showed it shaking instead of rocking smoothly. Swapping
+  the driver modules between slots 3 and 4 cleared it, which points to a poor
+  contact, not a dead part. The driver that was in slot 3 during the incidents
+  is now in slot 4 (rear Z2) and is the suspect: if the rear screw misbehaves,
+  replace that driver; if the front-right does again, look at the slot 3
+  socket or that motor's cable. Slots 3-4 had no airflow at the time.
 
 ## Toolhead
 
@@ -110,9 +119,10 @@ MOTOR3's enable pin is PA2 on board revision V1.1 (it differs on V1.0).
 |---|---|
 | Bed heater output | PA1 |
 | Bed thermistor (TH0) | PF3 |
-| Driver blower (FAN2) | PD12 |
+| Driver fan 1 (FAN2) | PD12 |
+| Driver fan 2 (FAN3) | PD13 |
 | Spare thermistor input (TH1) | PF4 |
-| Spare fan outputs (FAN3, FAN4, FAN5) | PD13, PD14, PD15 |
+| Spare fan outputs (FAN4, FAN5) | PD14, PD15 |
 
 **EBB36 GEN2 V1.0**
 
