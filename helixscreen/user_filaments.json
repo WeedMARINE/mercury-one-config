@@ -1,1 +1,10 @@
-[]
+{
+  "filaments": [],
+  "types": [
+    {
+      "name": "PLA",
+      "nozzle_max": 230,
+      "nozzle_min": 200
+    }
+  ]
+}
