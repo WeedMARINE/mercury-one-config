@@ -94,16 +94,6 @@
     "entries": [
       {
         "phases": {
-          "BED_MESH": 70,
-          "HOMING": 43
-        },
-        "temp_bucket": 2,
-        "timestamp": 1794950327,
-        "total": 842,
-        "window": 1
-      },
-      {
-        "phases": {
           "BED_MESH": 71
         },
         "temp_bucket": 2,
@@ -119,15 +109,6 @@
         "temp_bucket": 2,
         "timestamp": 1795103741,
         "total": 821,
-        "window": 1
-      },
-      {
-        "phases": {
-          "BED_MESH": 73
-        },
-        "temp_bucket": 1,
-        "timestamp": 1795013576,
-        "total": 960,
         "window": 1
       },
       {
@@ -262,14 +243,40 @@
         "timestamp": 1795787638,
         "total": 211,
         "window": 1
+      },
+      {
+        "heating": 92,
+        "phases": {
+          "BED_MESH": 76,
+          "HOMING": 83,
+          "Z_TILT": 6
+        },
+        "temp_bucket": 1,
+        "timestamp": 1795791354,
+        "total": 310,
+        "window": 1
+      },
+      {
+        "heating": 3,
+        "phases": {
+          "BED_MESH": 74,
+          "HOMING": 24,
+          "PURGING": 1,
+          "Z_TILT": 17
+        },
+        "skipped": [],
+        "temp_bucket": 2,
+        "timestamp": 1795793364,
+        "total": 252,
+        "window": 1
       }
     ]
   },
   "printers": {
     "default": {
       "bed_occupancy": {
-        "last_occupied": "{\"filename\":\"xyz-cali-cube-by-r3d_v1_0.30 SPEED (TEST)_PLA_0.3mm_13m.gcode\",\"job_id\":\"000052\",\"object_height\":20.0,\"start_time\":1795787426.5325437}",
-        "outlines": "{\"filename\":\"xyz-cali-cube-by-r3d_v1_0.30 SPEED (TEST)_PLA_0.3mm_13m.gcode\",\"objects\":[[[140.0,135.0],[120.0,135.0],[120.0,115.0],[140.0,115.0]]]}"
+        "last_occupied": "{\"filename\":\"3_DoiLuangChiangDao_230x230x85 (1)_0.30 SPEED (TEST)_PLA_0.3mm_15h59m.gcode\",\"job_id\":\"000054\",\"object_height\":84.8,\"start_time\":1795793111.984247}",
+        "outlines": "{\"filename\":\"3_DoiLuangChiangDao_230x230x85 (1)_0.30 SPEED (TEST)_PLA_0.3mm_15h59m.gcode\",\"objects\":[[[245.0,240.0],[15.0,240.0],[15.0,10.0],[245.0,10.0]]]}"
       },
       "default_macros": {
         "cooldown": "SET_HEATER_TEMPERATURE HEATER=extruder TARGET=0\nSET_HEATER_TEMPERATURE HEATER=heater_bed TARGET=0",
@@ -344,7 +351,7 @@
             "temperature_sensor EBB36_driver",
             "temperature_sensor beacon_coil"
           ],
-          "timestamp": "2026-11-27T13:10:37Z"
+          "timestamp": "2026-11-27T14:50:18Z"
         },
         "optional": []
       },
@@ -361,20 +368,20 @@
           "filter": {
             "interval_h": 200,
             "notified": false,
-            "used_h": 9.451944444440889
+            "used_h": 10.074999999995038
           },
           "nozzle": {
             "interval_h": 500,
             "notified": false,
-            "used_h": 9.451944444440889
+            "used_h": 10.074999999995038
           },
           "rails": {
             "interval_h": 300,
             "notified": false,
-            "used_h": 9.451944444440889
+            "used_h": 10.074999999995038
           }
         },
-        "total_h": 9.451944444440889
+        "total_h": 10.074999999995038
       },
       "moonraker_api_key": false,
       "moonraker_host": "127.0.0.1",
@@ -484,10 +491,10 @@
   "thermal": {
     "rates": {
       "extruder": {
-        "heat_rate": 0.257610559463501
+        "heat_rate": 0.2682249844074249
       },
       "heater_bed": {
-        "heat_rate": 1.3985170125961304
+        "heat_rate": 1.531955599784851
       }
     }
   },
