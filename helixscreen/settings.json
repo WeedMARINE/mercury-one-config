@@ -17,12 +17,17 @@
     "dim_brightness": 30,
     "dim_sec": 600,
     "drm_device": "",
+    "gcode_3d_rate": {
+      "board": "unknown/4c/100bm/800x480/32bpp",
+      "rate": 42681.04296875,
+      "version": "1.1.1 (334379d)"
+    },
     "gcode_render_mode": 0,
     "glass_probe": {
       "board": "egl/4c/100bm/800x480/32bpp",
-      "frame_ms": 5.238831,
+      "frame_ms": 4.915618,
       "passed": true,
-      "version": "1.1.0 (e82a1bb)"
+      "version": "1.1.1 (334379d)"
     },
     "gpu_3d_blocked": false,
     "gpu_blur_blocked": false,
@@ -89,54 +94,6 @@
     "entries": [
       {
         "phases": {
-          "BED_MESH": 89
-        },
-        "temp_bucket": 2,
-        "timestamp": 1794652008,
-        "total": 242,
-        "window": 1
-      },
-      {
-        "phases": {
-          "BED_MESH": 97,
-          "HOMING": 27
-        },
-        "temp_bucket": 2,
-        "timestamp": 1794664964,
-        "total": 269,
-        "window": 1
-      },
-      {
-        "phases": {
-          "BED_MESH": 49,
-          "HOMING": 28
-        },
-        "temp_bucket": 2,
-        "timestamp": 1794766034,
-        "total": 806,
-        "window": 1
-      },
-      {
-        "phases": {
-          "BED_MESH": 45,
-          "HOMING": 21
-        },
-        "temp_bucket": 2,
-        "timestamp": 1794938394,
-        "total": 789,
-        "window": 1
-      },
-      {
-        "phases": {
-          "BED_MESH": 62
-        },
-        "temp_bucket": 2,
-        "timestamp": 1794941033,
-        "total": 861,
-        "window": 1
-      },
-      {
-        "phases": {
           "BED_MESH": 70,
           "HOMING": 43
         },
@@ -162,33 +119,6 @@
         "temp_bucket": 2,
         "timestamp": 1795103741,
         "total": 821,
-        "window": 1
-      },
-      {
-        "phases": {
-          "BED_MESH": 96
-        },
-        "temp_bucket": 1,
-        "timestamp": 1794650618,
-        "total": 346,
-        "window": 1
-      },
-      {
-        "phases": {
-          "BED_MESH": 128
-        },
-        "temp_bucket": 1,
-        "timestamp": 1794740274,
-        "total": 368,
-        "window": 1
-      },
-      {
-        "phases": {
-          "BED_MESH": 70
-        },
-        "temp_bucket": 1,
-        "timestamp": 1794965900,
-        "total": 941,
         "window": 1
       },
       {
@@ -227,13 +157,119 @@
         "timestamp": 1795519805,
         "total": 944,
         "window": 1
+      },
+      {
+        "heating": 214,
+        "phases": {
+          "BED_MESH": 40,
+          "HOMING": 48,
+          "SOAKING": 635,
+          "Z_TILT": 16
+        },
+        "skipped": [],
+        "temp_bucket": 1,
+        "timestamp": 1795535499,
+        "total": 953,
+        "window": 1
+      },
+      {
+        "heating": 234,
+        "phases": {
+          "BED_MESH": 20,
+          "HOMING": 48,
+          "SOAKING": 630,
+          "Z_TILT": 16
+        },
+        "temp_bucket": 1,
+        "timestamp": 1795567267,
+        "total": 940,
+        "window": 1
+      },
+      {
+        "heating": 228,
+        "phases": {
+          "BED_MESH": 20,
+          "HOMING": 76,
+          "SOAKING": 650,
+          "Z_TILT": 6
+        },
+        "temp_bucket": 1,
+        "timestamp": 1795583136,
+        "total": 972,
+        "window": 1
+      },
+      {
+        "heating": 130,
+        "phases": {
+          "BED_MESH": 48,
+          "HOMING": 74,
+          "SOAKING": 642,
+          "Z_TILT": 5
+        },
+        "skipped": [],
+        "temp_bucket": 1,
+        "timestamp": 1795600535,
+        "total": 956,
+        "window": 1
+      },
+      {
+        "heating": 208,
+        "phases": {
+          "BED_MESH": 20,
+          "HOMING": 57,
+          "SOAKING": 647,
+          "Z_TILT": 16
+        },
+        "temp_bucket": 1,
+        "timestamp": 1795620654,
+        "total": 947,
+        "window": 1
+      },
+      {
+        "heating": 136,
+        "phases": {
+          "BED_MESH": 20,
+          "HOMING": 63,
+          "SOAKING": 651,
+          "Z_TILT": 5
+        },
+        "temp_bucket": 2,
+        "timestamp": 1795623568,
+        "total": 876,
+        "window": 1
+      },
+      {
+        "heating": 127,
+        "phases": {
+          "BED_MESH": 19,
+          "HOMING": 43,
+          "SOAKING": 634,
+          "Z_TILT": 6
+        },
+        "temp_bucket": 2,
+        "timestamp": 1795628274,
+        "total": 838,
+        "window": 1
+      },
+      {
+        "heating": 47,
+        "phases": {
+          "BED_MESH": 20,
+          "HOMING": 55,
+          "Z_TILT": 16
+        },
+        "temp_bucket": 1,
+        "timestamp": 1795787638,
+        "total": 211,
+        "window": 1
       }
     ]
   },
   "printers": {
     "default": {
       "bed_occupancy": {
-        "last_occupied": "{\"filename\":\"Mercury 1 carrying handles_0.30 STRUCTURAL (TEST)_ASA_0.3mm_4h26m.gcode\",\"job_id\":\"000048\",\"object_height\":26.9,\"start_time\":1795521475.800004}"
+        "last_occupied": "{\"filename\":\"xyz-cali-cube-by-r3d_v1_0.30 SPEED (TEST)_PLA_0.3mm_13m.gcode\",\"job_id\":\"000052\",\"object_height\":20.0,\"start_time\":1795787426.5325437}",
+        "outlines": "{\"filename\":\"xyz-cali-cube-by-r3d_v1_0.30 SPEED (TEST)_PLA_0.3mm_13m.gcode\",\"objects\":[[[140.0,135.0],[120.0,135.0],[120.0,115.0],[140.0,115.0]]]}"
       },
       "default_macros": {
         "cooldown": "SET_HEATER_TEMPERATURE HEATER=extruder TARGET=0\nSET_HEATER_TEMPERATURE HEATER=heater_bed TARGET=0",
@@ -281,11 +317,13 @@
           "extruder",
           "fan",
           "heater_fan hotend_fan",
-          "filament_switch_sensor filament_sensor"
+          "filament_switch_sensor filament_sensor",
+          "controller_fan driver_fan2"
         ],
         "last_snapshot": {
           "fans": [
             "controller_fan driver_fan",
+            "controller_fan driver_fan2",
             "fan",
             "heater_fan hotend_fan"
           ],
@@ -306,7 +344,7 @@
             "temperature_sensor EBB36_driver",
             "temperature_sensor beacon_coil"
           ],
-          "timestamp": "2026-11-24T14:46:49Z"
+          "timestamp": "2026-11-27T13:10:37Z"
         },
         "optional": []
       },
@@ -323,20 +361,20 @@
           "filter": {
             "interval_h": 200,
             "notified": false,
-            "used_h": 0.0
+            "used_h": 9.451944444440889
           },
           "nozzle": {
             "interval_h": 500,
             "notified": false,
-            "used_h": 0.0
+            "used_h": 9.451944444440889
           },
           "rails": {
             "interval_h": 300,
             "notified": false,
-            "used_h": 0.0
+            "used_h": 9.451944444440889
           }
         },
-        "total_h": 0.0
+        "total_h": 9.451944444440889
       },
       "moonraker_api_key": false,
       "moonraker_host": "127.0.0.1",
@@ -446,10 +484,10 @@
   "thermal": {
     "rates": {
       "extruder": {
-        "heat_rate": 0.240789532661438
+        "heat_rate": 0.257610559463501
       },
       "heater_bed": {
-        "heat_rate": 2.1287872791290283
+        "heat_rate": 1.3985170125961304
       }
     }
   },
